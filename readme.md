@@ -1,4 +1,8 @@
-## How to use this repo
+## The code for Underwater Organism Color Fine-tuning via Decomposition and Guidance
+
+This paper has been accepted by AAAI2024.
+
+If you have any quesions, feel free to contact me. My <b> E-mail </b> and <b> WeChat </b> can be found at my homepage: [<A HREF="https://xiaofeng-life.github.io/">Homepage</A>]
 
 ### 1. Data preparation for Enhancement Task
 Download underwater imagery datasets from websites or papers. Follow the organization form below.
