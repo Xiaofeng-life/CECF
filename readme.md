@@ -42,7 +42,9 @@ Download underwater imagery datasets from websites or papers. Follow the organiz
 ```
 
 ### 2. Data preparation Color Fine-tuning
-Note: **Use the EUVP-scenes if you want fine-tuning color ability!!!**
+Note: If you only need to perform color enhancement, you can ignore this step.
+
+**Use the EUVP-scenes if you want fine-tuning color ability!!!**
 **The diversity of UIEB and EUVP-imagenet are not enough. 
 Besides, the images with less distortion are required. Therefore, the EUVP-scenes is needed !!!**
 
@@ -58,6 +60,7 @@ python train_CECF_TransBlock.py --config configs/UIEB_3090_dim8_1m_bs6_NoTransBl
 ```
 
 ### 4. Test enhancement process
+If you need to compare with our algorithm, execute the following command.
 
 ```
 cd task_CECF 
