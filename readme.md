@@ -57,7 +57,7 @@ cd task_CECF
 python train_CECF_TransBlock.py --config configs/UIEB_3090_dim8_1m_bs6_NoTransBlock_SSIM.yaml --device cuda:7 --res_dir ../results/CECF/ --grad_acc 1
 ```
 
-## 4. Test enhancement process
+### 4. Test enhancement process
 
 ```
 cd task_CECF 
@@ -68,7 +68,7 @@ python test_enhancement.py --config configs/dim8_150k_bs6_NoTransBlock_SSIM.yaml
                     --device cuda:0 
 ```
 
-### 5. Test interpolation process
+### 5. Test fine-tuning process
 
 ```
 cd task_CECF 
