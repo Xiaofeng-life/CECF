@@ -20,7 +20,6 @@ class Option():
         self.parser.add_argument('--output_folder', type=str, help="output image path")
         self.parser.add_argument('--checkpoint', type=str, help="checkpoint of autoencoders")
         self.parser.add_argument('--guide_path', type=str, default='', help="style image path")
-        self.parser.add_argument('--output_path', type=str, default='.')
         self.parser.add_argument("--subfolder_prefix", type=str)
 
     def start_parse(self):
@@ -67,7 +66,7 @@ if __name__ == "__main__":
 
     alpha_weights = [0, 0.1, 0.2, 0.3, 0.4, 0.5]
     # alpha_weights = [0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3]
-    mk_cur_dir(opts.output_path)
+    mk_cur_dir(opts.output_folder)
     with torch.no_grad():
         for img_C in imgs_files:
 
